@@ -57,7 +57,7 @@ class Rectangle:
 
     @property
     def height(self):
-       """ method that returns the value of the height
+        """ method that returns the value of the height
 
         Returns:
             rectangle height
@@ -103,7 +103,6 @@ class Rectangle:
 
         Returns:
             rectangle perimeter
-
 
         """
 
