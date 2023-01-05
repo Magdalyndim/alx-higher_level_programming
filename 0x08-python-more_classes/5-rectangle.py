@@ -132,13 +132,13 @@ class Rectangle:
 
     def __repr__(self):
         """ Method that returns the string represantion of the instance
-
         Returns:
             string represenation of the object
 
         """
 
         return "Rectangle({:d}, {:d})".format(self.width, self.height)
+
     def __del__(self):
         """ Method that prints a message when the instance is deleted
 
