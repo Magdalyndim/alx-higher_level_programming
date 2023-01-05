@@ -12,6 +12,7 @@ class Rectangle:
 
     number_of_instances = 0
 
+
     def __init__(self, width=0, height=0):
         """ Method that initializes the instance
 
@@ -97,6 +98,7 @@ class Rectangle:
             rectangle area
 
 
+
         """
 
         return self.width * self.height
@@ -142,6 +144,7 @@ class Rectangle:
         """
 
         return "Rectangle({:d}, {:d})".format(self.width, self.height)
+
     def __del__(self):
         """ Method that prints a message when the instance is deleted
 
