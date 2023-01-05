@@ -3,11 +3,15 @@
 
 This module is composed by a class that defines a Rectangle
 
+
 """
 
 
 class Rectangle:
+
+
     """ Class that defines a rectangle """
+
 
     number_of_instances = 0
     print_symbol = "#"
@@ -19,11 +23,14 @@ class Rectangle:
             width: rectangle width
             height: rectangle height
 
+
         """
+
 
         self.width = width
         self.height = height
         Rectangle.number_of_instances += 1
+
 
     @property
     def width(self):
@@ -31,6 +38,7 @@ class Rectangle:
 
         Returns:
             rectangle width
+
 
         """
 
@@ -47,6 +55,7 @@ class Rectangle:
             TypeError: if width is not an integer
             ValueError: if width is less than zero
 
+
         """
 
         if not isinstance(value, int):
@@ -61,6 +70,7 @@ class Rectangle:
 
         Returns:
             rectangle height
+
 
         """
 
@@ -77,13 +87,16 @@ class Rectangle:
             TypeError: if height is not an integer
             ValueError: if height is less than zero
 
+
         """
+
 
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+
 
     def area(self):
         """ Method that calculates the Rectangle area
@@ -123,7 +136,8 @@ class Rectangle:
 
         if self.width == 0 or self.height == 0:
             return rectangle
-        for i in range(self.height)
+
+        for i in range(self.height):
             rectangle += (str(self.print_symbol) * self.width) + "\n"
 
         return rectangle[:-1]
@@ -133,7 +147,6 @@ class Rectangle:
 
         Returns:
             string represenation of the object
-
 
         """
 
@@ -150,8 +163,6 @@ class Rectangle:
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
-
-
         """ Method that returns the bigger Rectangle
 
         Args:
